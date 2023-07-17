@@ -1,0 +1,364 @@
+/* CSS GERAL - PÁGINA DE CADASTRO*/
+
+* {
+  background-color: #f5e1ce;
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #323232;
+  border: none;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+
+/*CSS DO MENU HORIZONTAL*/
+nav {
+  background-color: #dda292;
+  font-family: "Poppins", sans-serif;
+  width: 100%;
+  height: 70px;
+  margin-left: 50px;
+  background-color: transparent;
+  line-height: 50px;
+  margin-top: -40px;
+}
+
+.logoimg {
+  width: 50px;
+  height: 124px;
+  display: flex;
+  float: left;
+  padding: 5px 25px;
+  margin-top: -6px;
+  margin-left: -155px;
+}
+
+#navbar {
+  background-color: #dda292;
+  margin-left: 110px;
+  margin-right: 10px;
+}
+
+.arrow {
+  background-color: #dda292;
+  color: #fff;
+  width: 0.5em;
+  height: 0.5em;
+  display: inline-block;
+  vertical-align: middle;
+  border-left: 0.15em solid currentColor;
+  border-bottom: 0.15em solid currentColor;
+  transform: rotate(-45deg);
+  margin-left: 0.38em;
+  margin-top: -0.25em;
+}
+
+nav ul li ul {
+  background: transparent;
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  transition: all 0.5s ease;
+  margin-top: 1rem;
+  left: 0;
+  display: none;
+}
+
+nav ul li:hover>ul,
+nav ul li ul:hover {
+  visibility: visible;
+  opacity: 1;
+  display: block;
+}
+
+nav ul li {
+  background-color: #dda292;
+  display: inline-block;
+  list-style: none;
+  padding: 30px 0px;
+  margin-right: 40px;
+}
+
+.dropdown {
+  position: absolute;
+  padding: 2px 1.4rem;
+}
+
+nav ul li:hover .dropdown ul {
+  color: #dda292;
+  height: 60px;
+  opacity: 1;
+  transform: translateY(0) scaleY(1);
+  display: block;
+}
+
+
+nav ul li:hover .dropdown li {
+  background-color: #dda292;
+  border-radius: 10px;
+  display: block;
+  width: 200px;
+  height: 80px;
+  float: left;
+  padding-top: -90px;
+  padding-left: -30px;
+  margin-top: -25px;
+  margin-left: 300px;
+  margin-bottom: -225px;
+}
+
+nav ul li a {
+  background: #dda292;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-size: 1.3rem;
+  padding: 30px;
+  position: relative;
+}
+
+nav ul li a:hover {
+  color: rgb(255, 255, 255);
+  transition: .3s;
+}
+
+nav ul li a::after {
+  content: '';
+  width: 0%;
+  height: 4px;
+  position: absolute;
+  bottom: 25px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgb(255, 255, 255);
+  transform: width 0.3s;
+}
+
+nav ul li a:hover::after {
+  border-radius: 5px;
+  color: rgb(255, 255, 255);
+  transition: .3s;
+  width: 50%;
+}
+
+nav ul li .dropdown a:hover::after {
+  border-radius: 5px;
+  color: rgb(255, 255, 255);
+  transition: .3s;
+  width: 70%;
+}
+
+nav ul li:last-child a:hover::after {
+  border-radius: 5px;
+  color: rgb(255, 255, 255);
+  transition: .3s;
+  margin-left: -50px;
+  width: 28%;
+}
+
+li:last-child {
+  float: right
+}
+
+.dropdown {
+  position: absolute;
+  padding: 2px 1.4rem;
+}
+
+nav ul li:hover .dropdown ul {
+  opacity: 1;
+  transform: translateY(0) scaleY(1);
+  display: block;
+}
+
+nav ul li:hover .dropdown li {
+  border-radius: 10px;
+  display: block;
+  height: 80px;
+  float: left;
+  padding-top: -90px;
+  padding-left: -30px;
+  margin-top: -25px;
+  margin-left: 300px;
+  margin-bottom: -225px;
+}
+
+nav ul li a {
+  background: transparent;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-size: 1.3rem;
+  padding: 30px;
+  position: relative;
+}
+
+nav ul li a:hover {
+  color: rgb(255, 255, 255);
+  transition: .3s;
+}
+
+nav ul li a::after {
+  content: '';
+  width: 0%;
+  height: 4px;
+  position: absolute;
+  bottom: 25px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgb(255, 255, 255);
+  transform: width 0.3s;
+}
+
+nav ul li a:hover::after {
+  border-radius: 5px;
+  color: rgb(255, 255, 255);
+  transition: .3s;
+  width: 50%;
+}
+
+nav ul li .dropdown a:hover::after {
+  border-radius: 5px;
+  color: rgb(255, 255, 255);
+  transition: .3s;
+  width: 70%;
+}
+
+nav ul li:last-child a:hover::after {
+  border-radius: 5px;
+  color: rgb(255, 255, 255);
+  transition: .3s;
+  margin-left: -50px;
+  width: 28%;
+}
+
+li:last-child {
+  float: right
+}
+
+
+/*CSS DA PÁGINA DE CADASTRO*/
+input,
+label {
+  background-color: #fff;
+  display: block;
+  width: 100%;
+}
+
+body {
+  background-color: transparent;
+  overflow-x: hidden;
+  padding-top: 5vh;
+  height: 5%;
+  background-image: url('../img/fundo_tela_cadastro.png');
+  background-size: cover;
+  background-position-y: -150px;
+}
+
+/*FORM*/
+
+#main-container {
+  box-shadow: 0px 20px 35px rgba(90, 90, 90, 0.342);
+  height: 210px;
+  width: 500px;
+  margin-top: 200px;
+  margin-bottom: 60px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #fff;
+  border-radius: 17px;
+  padding: 25px;
+}
+
+#main-container h1 {
+  background-color: #fff;
+  color: #dda292;
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 1.7rem;
+  /*ADAPTADA AO ELEMENTO ROOT*/
+}
+
+form {
+  background-color: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.full-box {
+  background-color: #fff;
+  flex: 1 1 100%;
+  position: relative;
+}
+
+.half-box {
+  background-color: #fff;
+  flex: 1 1 45%;
+  position: relative;
+}
+
+.spacing {
+  background-color: #fff;
+  margin-right: 2.5%;
+}
+
+label {
+  background-color: #fff;
+  font-weight: bold;
+  font-size: 8rem;
+}
+
+input {
+  background-color: #fff;
+  border-bottom: 2px solid #323232;
+  padding: 10px;
+  font-size: 0.9rem;
+  margin-bottom: 20px;
+}
+
+input:focus {
+  background-color: #fff;
+  border-color: #dda292;
+}
+
+input[type="submit"] {
+  background-color: #dda292;
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  height: 40px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #d3907d;
+}
+
+#agreement {
+  background-color: #fff;
+  margin-right: 5px;
+}
+
+#agreement,
+#agreement-label {
+  background-color: #fff;
+  display: inline-block;
+  width: auto;
+}
+
+/*VALIDDAÇÕES*/
+
+.error-validation {
+  color: #ff1a1a;
+  position: absolute;
+  top: 57px;
+  font-size: 0.8rem;
+}
+
+.template {
+  display: none;
+}

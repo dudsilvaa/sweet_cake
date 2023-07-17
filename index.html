@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/estilo.css">
+  <link rel="shortcut icon" type="x-icon" href="./img/icon.png">
+  <style>
+  
+  
+  
+  
+  @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;1,100&display=swap');
+
+
+
+    h1 {
+      font-family: 'Work Sans', sans-serif;
+    }
+  </style>
+  <title>Sweet Cake</title>
+
+</head>
+
+<body>
+  
+  <!--BARRA DE NAVEGACAO-->
+  <nav>
+    <!--LOGO-->
+    <div class="logoimg">
+      <img src="./img/logos sweet cake.png" width="270">
+    </div>
+
+    <!--MENU HORIZONTAL-->
+    <ul>
+      <div id="navbar">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Produtos<span class="arrow"></span></a>
+          <ul class="dropdown">
+            <li><a href="index2.html">Bolos Caseiros</a></li>
+            <br>
+            <li><a href="index3.html">Bolos Especiais</a></li>
+            <br>
+            <li><a class="underline3" href="index4.html">Docesㅤㅤㅤㅤﾠ </a></li>
+          </ul>
+        </li>
+        <li><a href="index5.html">Quem sou?</a></li>
+        <li><a href="index6.html">Cadastrar-se</a></li>
+      </div>
+    </ul>
+  </nav>
+
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+
+  <!--BANNER E CUPONS-->
+  <header>
+    <div class="slideshow-container">
+
+      <!-- Full-width images with number and caption text -->
+      <div class="mySlides fade">
+        <img src="img/banner1.png" width="1200px" height="450px">
+      </div>
+
+      <div class="mySlides fade">
+        <img src="img/banner2.png" width="1200px" height="450px">
+      </div>
+
+      <div class="mySlides fade">
+        <img src="img/banner3.png" width="1200px" height="450px">
+      </div>
+    </div>
+    <script>
+      let slideIndex = 0;
+      showSlides();
+
+      function showSlides() {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) { slideIndex = 1 }
+        slides[slideIndex - 1].style.display = "block";
+        setTimeout(showSlides, 1500); // Change image every 2 seconds
+      }
+    </script>
+    <hr>
+  </header>
+  <!--SECTION-->
+  <div class="nav">
+    <aside>
+      <ul>
+        <li>
+          <a href="#">
+            <i class="bx bx-ava-alt-2"></i>
+            <span>Avalições</span>
+          </a>
+        </li>
+      </ul>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br><br><br><br><br><br>
+      <br>
+      <ul>
+        <li>
+          <a href="#">
+            <i class="bx bx-ven-alt-2"></i>
+            <span>Mais Vendidos</span>
+          </a>
+        </li>
+      </ul>
+    </aside>
+  </div>
+  <!--GALERIA-->
+  <main>
+    <div class="column">
+      <h1>CONHEÇA TODOS OS NOSSOS 
+        PRODUTOS:</h1>
+      <div class="gallery_images">
+        <img class="case" src="./img/bolo_caseiro1.jpg">
+        <h2>BOLOS CASEIROS</h2>
+        <a class="a" href="index2.html">Ver</a>
+      </div>
+      <div class="gallery_images">
+        <img class="espe" src="./img/bolo-decorado1.png">
+        <h2>BOLOS ESPECIAIS</h2>
+        <a class="a" href="index3.html">Ver</a>
+      </div>
+      <div class="gallery_images">
+        <img class="doces" src="./img/doces.jpg">
+        <h2 class="docesa">DOCES</h2>
+        <a class="a" href="index4.html">Ver</a>
+      </div>
+    </div>
+  </main>
+  <hr class="hr">
+  <div class="final">
+    <img src="./img/infos.png" width="95%" height="500px">
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,1412 @@
+/*CSS UNIVERSAL PARA TODA A PÁGINA*/
+* {
+  background-color: #ffecda;
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+/*CSS DO BANNER*/
+.banner img {
+  width: 100%;
+  align-items: center;
+  max-width: 100%;
+  margin: auto;
+}
+
+
+/*CSS DO MENU HORIZONTAL*/
+nav {
+  font-family: "Poppins", sans-serif;
+  width: 100%;
+  height: 70px;
+  margin-left: 50px;
+  background-color: transparent;
+  line-height: 50px;
+}
+
+.logoimg {
+  width: 50px;
+  height: 123px;
+  display: flex;
+  float: left;
+  padding: 5px 25px;
+  margin-top: -6px;
+  margin-left: -165px;
+}
+
+#navbar {
+  background-color: #ffecda;
+  margin-left: 110px;
+  margin-right: 10px;
+}
+
+.arrow {
+  background-color: #ffecda;
+  width: 0.5em;
+  height: 0.5em;
+  display: inline-block;
+  vertical-align: middle;
+  border-left: 0.15em solid currentColor;
+  border-bottom: 0.15em solid currentColor;
+  transform: rotate(-45deg);
+  margin-left: 0.38em;
+  margin-top: -0.25em;
+}
+
+nav ul li ul {
+  background: transparent;
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  transition: all 0.5s ease;
+  margin-top: 1rem;
+  left: 0;
+  display: none;
+}
+
+nav ul li:hover>ul,
+nav ul li ul:hover {
+  visibility: visible;
+  opacity: 1;
+  display: block;
+}
+
+nav ul li {
+  background-color: #ffecda;
+  display: inline-block;
+  list-style: none;
+  padding: 30px 0px;
+  margin-right: 40px;
+}
+
+.dropdown {
+  position: absolute;
+  padding: 2px 1.4rem;
+}
+
+nav ul li:hover .dropdown ul {
+  opacity: 1;
+  transform: translateY(0) scaleY(1);
+  display: block;
+}
+
+nav ul li:hover .dropdown li {
+  border-radius: 10px;
+  display: block;
+  height: 80px;
+  float: left;
+  padding-top: -90px;
+  padding-left: -30px;
+  margin-top: -25px;
+  margin-left: 300px;
+  margin-bottom: -225px;
+}
+
+nav ul li a {
+  background: transparent;
+  text-decoration: none;
+  color: #926354;
+  font-size: 1.3rem;
+  padding: 30px;
+  position: relative;
+}
+
+nav ul li a:hover {
+  color: #926354;
+  transition: .3s;
+}
+
+nav ul li a::after {
+  content: '';
+  width: 0%;
+  height: 4px;
+  position: absolute;
+  bottom: 25px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #926354;
+  transform: width 0.3s;
+}
+
+nav ul li a:hover::after {
+  border-radius: 5px;
+  color: #926354;
+  transition: .3s;
+  width: 50%;
+}
+
+nav ul li .dropdown a:hover::after {
+  border-radius: 5px;
+  color: #926354;
+  transition: .3s;
+  width: 70%;
+}
+
+nav ul li:last-child a:hover::after {
+  border-radius: 5px;
+  color: #926354;
+  transition: .3s;
+  margin-left: -50px;
+  width: 28%;
+}
+
+li:last-child {
+  float: right
+}
+
+hr {
+  width: 100%;
+  border-bottom: 3px solid #926354;
+}
+
+
+/*CSS DOS BOLOS*/
+.row {
+  margin-left: 150PX;
+}
+
+.card {
+  min-height: 170px;
+  width: 348px;
+  height: 355px;
+  padding: 30px;
+  padding-top: 25px;
+  padding-left: 18px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: #fff4e8;
+  margin: -15px -84px;
+  margin-top: -50px;
+  margin-bottom: 10px;
+  transition: 0.3s;
+  box-shadow: 0px 15px 30px rgba(90, 90, 90, 0.342);
+}
+
+.card:hover {
+  height: 410px;
+  width: 352px;
+  transform: scale(1.1);
+}
+
+.card:hover .images1 {
+  position: absolute;
+  background-color: transparent;
+  padding: 0;
+  transform: scale(0.75);
+  width: 10px;
+  margin-top: -210px;
+  margin-right: 187px;
+  box-shadow: 0 15px 45px rgba(0, 0, 0, 0.12);
+}
+
+.card:hover .images2 {
+  background-color: transparent;
+  padding: 0;
+  transform: scale(0.75);
+  width: 10px;
+  margin-top: -210px;
+  margin-right: 210px;
+  box-shadow: 0 15px 45px rgba(0, 0, 0, 0.12);
+}
+
+.card:hover .images3 {
+  background-color: transparent;
+  padding: 0;
+  transform: scale(0.75);
+  /*transition: 0.6s;*/
+  width: 10px;
+  margin-top: -210px;
+  margin-right: 198px;
+  box-shadow: 0 15px 45px rgba(0, 0, 0, 0.12);
+}
+
+.column {
+  color: rgb(0, 0, 0);
+  float: left;
+  width: 33%;
+  padding: 100px;
+  padding-left: 130PX;
+  text-align: center;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.column img {
+  border-radius: 15px;
+  margin: 30px 0;
+  margin-bottom: 5px;
+  width: 350px;
+  height: 350px;
+  margin-top: 38px;
+  justify-content: center;
+  align-items: center;
+}
+
+.card:hover h1 {
+  font-size: 1.6rem;
+  margin-top: -25px;
+}
+
+.card:hover button {
+  display: flex;
+}
+
+#img0 {
+  background-image: linear-gradient(to right, rgba(45, 45, 45, 0.6), hsla(24, 36%, 60%, 0.6), (#f5e1ce)), url(/img/bolo_caseiro1.jpg);
+  margin: 30px 0;
+  margin-bottom: -8px;
+  margin-right: -9px;
+  margin-top: 30px;
+  justify-content: center;
+  align-items: center;
+}
+
+#img1 {
+  margin: 30px 0;
+  margin-bottom: -8px;
+  width: 150px;
+  height: 150px;
+  margin-right: -9px;
+  margin-top: 50px;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  height: auto;
+}
+
+.card .images1 {
+  background-color: transparent;
+}
+
+#img2 {
+  margin: 30px 0;
+  margin-bottom: -2px;
+  width: 150px;
+  height: 150px;
+  margin-right: -10px;
+  margin-top: 5px;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  height: auto;
+}
+
+#img3 {
+  margin: 30px 0;
+  margin-bottom: 19px;
+  width: 150px;
+  height: 150px;
+  margin-right: -12px;
+  margin-top: 5px;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  height: auto;
+}
+
+.card .images2 {
+  background-color: transparent;
+}
+
+#img4 {
+  margin: 30px 0;
+  max-width: 450px;
+  justify-content: center;
+  align-items: center;
+  max-height: 270px;
+  margin-top: 50px;
+  margin-right: -10px;
+  margin-bottom: -5px;
+  width: 450px;
+  height: 450px;
+}
+
+#img5 {
+  margin: 30px 0;
+  max-width: 450px;
+  justify-content: center;
+  align-items: center;
+  max-height: 270px;
+  margin-top: 50px;
+  margin-right: -10px;
+  margin-bottom: -5px;
+  width: 450px;
+  height: 450px;
+}
+
+.card .images3 {
+  background-color: transparent;
+}
+
+/* CSS DO TEXTO DOS PRODUTOS*/
+.column label {
+  background-color: #fff4e8;
+  text-align: center;
+  margin-right: -10px;
+  width: 280px;
+  height: -5px;
+}
+
+.column h1 {
+  background-color: #fff4e8;
+  color: #000000;
+  margin-bottom: -5px;
+  margin-top: 15px;
+  padding-bottom: -5px;
+  margin-left: -30px;
+  padding-left: 30px;
+  font-size: 32px;
+  font-family: "Poppins", Arial, Tahoma, sans-serif;
+}
+
+
+/*CSS DO TEXTO DOS PRODUTOS*/
+.content {
+  background-color: #fff4e8;
+  overflow: hidden;
+  text-align: center;
+}
+
+.content p {
+  background-color: #fff4e8;
+  color: #474747;
+  font-weight: lighter;
+  font-family: "Poppins", Arial, Tahoma, sans-serif;
+}
+
+/*CSS DOS BOTÕES DE AGENDAMENTO*/
+.column button {
+  display: none;
+  position: absolute;
+  font-size: 18px;
+  color: black;
+  background-color: #fff4e8;
+  border: 2px solid #f1dac3;
+  padding: 10px 20px;
+  margin-bottom: -231px;
+  margin-top: 30px;
+  margin-left: 110px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  cursor: pointer;
+  font-weight: 320;
+  transition: border-color 0.5s, background-color 0.3s, color 0.5s;
+}
+
+.column button a {
+  padding-top: 90px;
+}
+
+.column button:hover {
+  color: black;
+  background-color: #f3d9c1;
+  border: 1px solid #e6c8ad;
+}
+
+.final img {
+  cursor: pointer;
+  transition: transform .2s;
+  border: 5px solid #b99f88;
+  border-radius: 14px;
+  margin-left: 258px;
+  margin-top: -240px;
+  width: 62%;
+  height: 350px;
+}
+
+.final img:hover {
+  border: 5px solid #bba089;
+  transform: scale(1.1);
+}
+
+
+@media screen and (min-width: 1024px) {
+  .banner {
+    height: 100%;
+    align-items: center;
+    width: 100%;
+    margin: 0;
+    margin-top: 42px;
+    margin-left: -1px;
+  }
+
+
+  /*CSS DO MENU HORIZONTAL*/
+  nav {
+    font-family: "Poppins", sans-serif;
+    width: 100%;
+    height: 70px;
+    margin-left: 50px;
+    background-color: transparent;
+    line-height: 50px;
+  }
+
+  .logoimg {
+    width: 50px;
+    height: 123px;
+    display: flex;
+    float: left;
+    padding: 5px 25px;
+    margin-top: -6px;
+    margin-left: -165px;
+  }
+
+  #navbar {
+    background-color: #ffecda;
+    margin-left: 110px;
+    margin-right: 10px;
+  }
+
+  .arrow {
+    background-color: #ffecda;
+    width: 0.5em;
+    height: 0.5em;
+    display: inline-block;
+    vertical-align: middle;
+    border-left: 0.15em solid currentColor;
+    border-bottom: 0.15em solid currentColor;
+    transform: rotate(-45deg);
+    margin-left: 0.38em;
+    margin-top: -0.25em;
+  }
+
+  nav ul li ul {
+    background: transparent;
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    transition: all 0.5s ease;
+    margin-top: 1rem;
+    left: 0;
+    display: none;
+  }
+
+  nav ul li:hover>ul,
+  nav ul li ul:hover {
+    visibility: visible;
+    opacity: 1;
+    display: block;
+  }
+
+  nav ul li {
+    background-color: #ffecda;
+    display: inline-block;
+    list-style: none;
+    padding: 30px 0px;
+    margin-right: 40px;
+  }
+
+  .dropdown {
+    position: absolute;
+    padding: 2px 1.4rem;
+  }
+
+  nav ul li:hover .dropdown ul {
+    opacity: 1;
+    transform: translateY(0) scaleY(1);
+    display: block;
+  }
+
+  nav ul li:hover .dropdown li {
+    border-radius: 10px;
+    display: block;
+    height: 80px;
+    float: left;
+    padding-top: -90px;
+    padding-left: -30px;
+    margin-top: -25px;
+    margin-left: 300px;
+    margin-bottom: -225px;
+  }
+
+  nav ul li a {
+    background: transparent;
+    text-decoration: none;
+    color: #926354;
+    font-size: 1.3rem;
+    padding: 30px;
+    position: relative;
+  }
+
+  nav ul li a:hover {
+    color: #926354;
+    transition: .3s;
+  }
+
+  nav ul li a::after {
+    content: '';
+    width: 0%;
+    height: 4px;
+    position: absolute;
+    bottom: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #926354;
+    transform: width 0.3s;
+  }
+
+  nav ul li a:hover::after {
+    border-radius: 5px;
+    color: #926354;
+    transition: .3s;
+    width: 50%;
+  }
+
+  nav ul li .dropdown a:hover::after {
+    border-radius: 5px;
+    color: #926354;
+    transition: .3s;
+    width: 70%;
+  }
+
+  nav ul li:last-child a:hover::after {
+    border-radius: 5px;
+    color: #926354;
+    transition: .3s;
+    margin-left: -50px;
+    width: 28%;
+  }
+
+  li:last-child {
+    float: right;
+  }
+
+
+
+  hr {
+    width: 1500px;
+    border-bottom: 3px solid #926354;
+    margin-bottom: 130px;
+    margin-top: -350px;
+  }
+
+
+  /*CSS DOS BOLOS*/
+  .row {
+    margin-left: 110PX;
+    margin-top: 410px;
+  }
+
+  .card {
+    min-height: 170px;
+    width: 408px;
+    height: 450px;
+    padding: 30px;
+    padding-top: 35px;
+    padding-left: 18px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #fff4e8;
+    margin: -15px -84px;
+    transition: transform .2s;
+    box-shadow: 0px 15px 30px rgba(90, 90, 90, 0.342);
+  }
+
+  .card:hover {
+    transform: scale(1.1);
+    width: 380px;
+    height: 450px;
+  }
+
+  .card .images1 {
+    margin: 30px 0;
+    margin-bottom: -3px;
+    margin-top: -110px;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    position: absolute;
+    transition: 0.5s;
+    background-color: transparent;
+    padding: 0;
+    width: 0px;
+    margin-left: -318px;
+    box-shadow: 0 15px 45px rgba(0, 0, 0, 0.12);
+  }
+
+  .card:hover .images1 {
+    transform: scale(0.65);
+    margin-right: -120px;
+    top: 45px;
+  }
+
+  .card .images2 {
+    margin-right: -9px;
+    margin-top: 25px;
+    margin: 30px 0;
+    margin-bottom: 153px;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    position: absolute;
+    transition: 0.5s;
+    background-color: transparent;
+    padding: 0;
+    width: 0px;
+    margin-left: -318px;
+    box-shadow: 0 15px 45px rgba(0, 0, 0, 0.12);
+  }
+
+  .card:hover .images2 {
+    background-color: transparent;
+    transform: scale(0.65);
+    margin-right: -120px;
+    top: 45px;
+  }
+
+  .card .images3 {
+    margin: 30px 0;
+    margin-bottom: -35px;
+    width: 150px;
+    height: 150px;
+    margin-right: -9px;
+    margin-top: 135px;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: auto;
+  }
+
+  .card:hover .images3 {
+    background-color: transparent;
+    transform: scale(0.65);
+    margin-right: -120px;
+    top: 45px;
+  }
+
+  .card:hover .images4 {
+    background-color: transparent;
+    padding: 0;
+    transform: scale(0.60);
+    transition: 0.6s;
+    width: 0px;
+    margin-top: -185px;
+    margin-right: 150px;
+    box-shadow: 0 15px 45px rgba(0, 0, 0, 0.12);
+  }
+
+  .card:hover .images5 {
+    background-color: transparent;
+    padding: 0;
+    transform: scale(0.60);
+    transition: 0.6s;
+    width: 0px;
+    margin-top: -185px;
+    margin-right: 155px;
+    box-shadow: 0 15px 45px rgba(0, 0, 0, 0.12);
+  }
+
+  .card:hover .images6 {
+    background-color: transparent;
+    padding: 0;
+    transform: scale(0.60);
+    transition: 0.6s;
+    width: 10px;
+    margin-top: -185px;
+    margin-right: 145px;
+    box-shadow: 0 15px 45px rgba(0, 0, 0, 0.12);
+  }
+
+  .column {
+    color: rgb(0, 0, 0);
+    float: left;
+    width: 33%;
+    padding: 100px;
+    padding-left: 130PX;
+    text-align: center;
+  }
+
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  .column img {
+    border-radius: 13px;
+    margin: 30px 0;
+    margin-bottom: 5px;
+    width: 350px;
+    height: 350px;
+    margin-right: -15px;
+    margin-top: 48px;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: auto;
+  }
+
+  #img2 {
+    margin: 30px 0;
+    margin-bottom: -35px;
+    width: 150px;
+    height: 150px;
+    margin-right: -9px;
+    margin-top: 135px;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: auto;
+  }
+
+  .card .images3 {
+    background-color: transparent;
+  }
+
+  #img3 {
+    margin: 30px 0;
+    margin-bottom: -5px;
+    width: 150px;
+    height: 150px;
+    margin-right: -12px;
+    margin-top: 91px;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: auto;
+  }
+
+  .card .images4 {
+    background-color: transparent;
+  }
+
+  #img4 {
+    margin: 30px 0;
+    max-width: 450px;
+    justify-content: center;
+    align-items: center;
+    max-height: 270px;
+    margin-top: 80px;
+    margin-right: -10px;
+    margin-bottom: -15px;
+    width: 450px;
+    height: 650px;
+  }
+
+  .card .images5 {
+    background-color: transparent;
+  }
+
+  #img5 {
+    margin: 30px 0;
+    max-width: 450px;
+    justify-content: center;
+    align-items: center;
+    max-height: 270px;
+    margin-top: 70px;
+    margin-right: -10px;
+    margin-bottom: 65px;
+    width: 450px;
+    height: 650px;
+  }
+
+  .card .images6 {
+    background-color: transparent;
+  }
+
+
+  .column label {
+    background-color: transparent;
+    text-align: center;
+    width: 300px;
+    height: 400px;
+  }
+
+  .column h1 {
+    background-color: transparent;
+    color: #000000;
+    padding-top: 5px;
+    margin-bottom: 65px;
+    margin-top: 20px;
+    padding-bottom: -10px;
+    margin-left: -30px;
+    padding-left: 30px;
+    font-size: 34px;
+    font-family: "Poppins", Arial, Tahoma, sans-serif;
+  }
+
+  .chocolate h1 {
+    margin-top: 350px;
+  }
+
+  .card:hover .chocolate h1 {
+    font-size: 30px;
+    margin-top: 90px;
+  }
+
+  .laranja h1 {
+    margin-top: 365px;
+    margin-right: 9px;
+  }
+
+  .card:hover .laranja h1 {
+    font-size: 30px;
+    margin-top: 120px;
+  }
+
+  .milho h1 {
+    margin-top: 50px;
+    margin-right: 10px;
+  }
+
+  .card:hover .milho h1 {
+    margin-top: -33px;
+    margin-right: 5px;
+    margin-left: -20px;
+  }
+
+  .ninho h1 {
+    margin-right: 9px;
+  }
+
+  .card:hover .ninho h1 {
+    margin-right: 25px;
+    margin-left: 0px;
+  }
+
+  .limao h1 {
+    margin-top: 40px;
+    margin-right: 10px;
+  }
+
+  .card:hover .limao h1 {
+    margin-top: -33px;
+    margin-right: 5px;
+    margin-left: -20px;
+  }
+
+  .fuba h1 {
+    margin-top: 3px;
+    margin-right: 10px;
+  }
+
+  .card:hover .fuba h1 {
+    margin-top: -13px;
+    margin-right: 5px;
+    margin-left: -20px;
+  }
+
+
+  /*CSS DAS DESCRIÇÕES*/
+  .card:hover .content {
+    transition: 0.6s;
+    text-align: center;
+    background-color: transparent;
+    margin-top: -190px;
+    margin-bottom: -1px;
+    font-size: 1.4rem;
+  }
+
+
+  /*CSS DOS BOTÕES DE AGENDAMENTO*/
+  .column button {
+    font-size: 20px;
+    display: none;
+    color: black;
+    background-color: #fff4e8;
+    border: 2px solid #f1d6bc;
+    padding: 10px 20px;
+    margin-top: -40px;
+    margin-left: 130px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    cursor: pointer;
+    font-weight: 320;
+    transition: 0.6s;
+    transition: border-color 0.5s, background-color 0.5s, color 0.5s;
+  }
+
+  .column button a {
+    padding-top: 90px;
+  }
+
+  .column button:hover {
+    transition: 0.6s;
+    transform: scale(1.2);
+    color: black;
+    background-color: #f1d6bc;
+    border: 1px solid #e4bf9c;
+  }
+
+  .final img {
+    cursor: pointer;
+    transition: transform .2s;
+    border: 5px solid #b99f88;
+    border-radius: 14px;
+    margin-left: 285px;
+    margin-top: -240px;
+    width: 58%;
+    height: 350px;
+  }
+
+  .final img:hover {
+    border: 5px solid #bba089;
+    transform: scale(1.1);
+  }
+
+}
+
+
+@media screen and (min-width: 480px) {
+
+  /*CSS DO MENU HORIZONTAL*/
+  nav {
+    font-family: "Poppins", sans-serif;
+    width: 100%;
+    height: 70px;
+    margin-left: 35px;
+    background-color: transparent;
+    line-height: 50px;
+  }
+
+  #navbar {
+    background-color: #ffecda;
+    margin-left: 100px;
+    margin-right: 10px;
+  }
+
+  .banner img {
+    height: 510px;
+    align-items: center;
+    max-width: 100%;
+    margin: auto;
+  }
+
+  hr {
+    width: 100%;
+    margin-top: 0;
+  }
+
+
+  /*CSS DOS BOLOS*/
+  .row {
+    margin-left: 20PX;
+    margin-top: -90px;
+    margin-bottom: 50px;
+  }
+
+  .card {
+    min-height: 170px;
+    width: 318px;
+    height: 365px;
+    padding: 30px;
+    padding-top: 25px;
+    padding-left: 18px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #fff4e8;
+    margin: -15px -84px;
+    margin-top: 111px;
+    margin-bottom: 10px;
+    transition: 0.3s;
+    box-shadow: 0px 15px 30px rgba(90, 90, 90, 0.342);
+  }
+
+  .card:hover {
+    height: 390px;
+    width: 322px;
+    transform: scale(1.1);
+  }
+
+  .card:hover .images1 {
+    background-color: transparent;
+    padding: 0;
+    transform: scale(0.70);
+    transition: 0.6s;
+    width: 0px;
+    margin-top: -180px;
+    margin-right: -98px;
+    box-shadow: 0 15px 45px rgba(0, 0, 0, 0.12);
+  }
+
+  .card:hover .images2 {
+    background-color: transparent;
+    padding: 0;
+    transform: scale(0.70);
+    transition: 0.6s;
+    width: 0px;
+    margin-top: -180px;
+    margin-right: -98px;
+    box-shadow: 0 15px 45px rgba(0, 0, 0, 0.12);
+  }
+
+  .card:hover .images3 {
+    background-color: transparent;
+    padding: 0;
+    transform: scale(0.65);
+    transition: 0.6s;
+    width: 0px;
+    margin-top: -440px;
+    margin-bottom: 150px;
+    margin-right: 158px;
+    box-shadow: 0 15px 45px rgba(0, 0, 0, 0.12);
+  }
+
+  .card:hover .images4 {
+    background-color: transparent;
+    padding: 0;
+    transform: scale(0.60);
+    transition: 0.6s;
+    width: 0px;
+    margin-top: -480px;
+    margin-bottom: 155px;
+    margin-right: 150px;
+    box-shadow: 0 15px 45px rgba(0, 0, 0, 0.12);
+  }
+
+  .card:hover .images5 {
+    background-color: transparent;
+    padding: 0;
+    transform: scale(0.55);
+    transition: 0.6s;
+    width: 0px;
+    margin-top: -487px;
+    margin-bottom: -95px;
+    margin-right: 140px;
+    box-shadow: 0 15px 45px rgba(0, 0, 0, 0.12);
+  }
+
+  .card:hover .images6 {
+    background-color: transparent;
+    padding: 0;
+    transform: scale(0.60);
+    transition: 0.6s;
+    width: 10px;
+    margin-top: -825px;
+    margin-right: 145px;
+    box-shadow: 0 15px 45px rgba(0, 0, 0, 0.12);
+  }
+
+  .column {
+    color: rgb(0, 0, 0);
+    float: left;
+    width: 33%;
+    padding: 100px;
+    padding-left: 130PX;
+    text-align: center;
+  }
+
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+
+  .card:hover button {
+    display: flex;
+  }
+
+  #img0 {
+    background-color: transparent;
+    margin: 30px 0;
+    margin-bottom: -13px;
+    width: 250px;
+    height: 250px;
+    margin-left: 37px;
+    margin-top: 30px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .card .images1 {
+    background-color: transparent;
+  }
+
+  #img1 {
+    background-color: transparent;
+    margin: 30px 0;
+    margin-bottom: -13px;
+    width: 250px;
+    height: 250px;
+    margin-left: 37px;
+    margin-top: 50px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .card .images2 {
+    background-color: transparent;
+  }
+
+  #img2 {
+    background-color: transparent;
+    margin: 30px 0;
+    margin-bottom: -13px;
+    width: 250px;
+    height: 250px;
+    margin-left: 3px;
+    margin-top: -15px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .card .images3 {
+    background-color: transparent;
+  }
+
+  #img3 {
+    background-color: transparent;
+    margin: 30px 0;
+    margin-bottom: -13px;
+    width: 250px;
+    height: 250px;
+    margin-left: 3px;
+    margin-top: 5px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .card .images4 {
+    background-color: transparent;
+  }
+
+  #img4 {
+    background-color: transparent;
+    margin: 30px 0;
+    margin-bottom: -13px;
+    width: 250px;
+    height: 250px;
+    margin-left: 13px;
+    margin-top: 45px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .card .images5 {
+    background-color: transparent;
+  }
+
+  #img5 {
+    background-color: transparent;
+    margin: 30px 0;
+    margin-bottom: -13px;
+    width: 250px;
+    height: 250px;
+    margin-left: 3px;
+    margin-top: -5px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .card .images6 {
+    background-color: transparent;
+  }
+
+
+  /* CSS DO TEXTO DOS PRODUTOS*/
+  .column label {
+    background-color: transparent;
+    text-align: center;
+    margin-right: -10px;
+    width: 250px;
+    height: -55px;
+  }
+
+  .card:hover label {
+    height: 5px;
+  }
+
+  .column h1 {
+    background-color: transparent;
+    color: #000000;
+    margin-bottom: 0px;
+    margin-top: 5px;
+    padding-bottom: -5px;
+    margin-left: -30px;
+    padding-left: 30px;
+    font-size: 30px;
+    font-family: "Poppins", Arial, Tahoma, sans-serif;
+  }
+
+  .chocolate h1 {
+    margin-top: 270px;
+  }
+
+  .card:hover .chocolate h1 {
+    font-size: 1.6rem;
+    margin-top: -230px;
+  }
+
+  .laranja h1 {
+    margin-right: 30px;
+    margin-left: -5px;
+    margin-top: 308px;
+  }
+
+  .card:hover .laranja h1 {
+    font-size: 1.6rem;
+    margin-top: -220px;
+    margin-right: 25px;
+    margin-left: 0px;
+  }
+
+  .milho h1 {
+    margin-top: 50px;
+    margin-left: 30px;
+    margin-right: 50px;
+  }
+
+  .card:hover .milho h1 {
+    font-size: 1.6rem;
+    margin-top: -173px;
+    margin-right: 5px;
+    margin-left: -20px;
+  }
+
+  .ninho h1 {
+    margin-top: 30px;
+    margin-bottom: -30px;
+  }
+
+  .card:hover .ninho h1 {
+    font-size: 1.6rem;
+    margin-top: -190px;
+  }
+
+  .limao h1 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .card:hover .limao h1 {
+    font-size: 1.6rem;
+    margin-top: 15px;
+  }
+
+  .fuba h1 {
+    margin-top: 35px;
+    margin-bottom: -13px;
+  }
+
+  .card:hover .fuba h1 {
+    font-size: 1.6rem;
+    margin-top: -35px;
+    margin-bottom: 10px;
+  }
+
+
+  /*CSS DO TEXTO DOS PRODUTOS*/
+  .content {
+    background-color: transparent;
+    overflow: hidden;
+    text-align: center;
+  }
+
+  .content p {
+    background-color: transparent;
+    font-size: 1.2rem;
+    color: #474747;
+    font-weight: lighter;
+    font-family: "Poppins", Arial, Tahoma, sans-serif;
+  }
+
+  .card:hover .content {
+    background-color: transparent;
+    margin-bottom: -325px;
+  }
+
+  .card:hover .content p {
+    margin-bottom: 5px;
+  }
+
+  .card:hover .contninho {
+    background-color: transparent;
+    margin-top: 30px;
+  }
+
+  .card:hover .lima {
+    font-size: 0.5rem;
+    background-color: transparent;
+    margin-bottom: 5px;
+    margin-top: 230px;
+  }
+
+  .card:hover .fub {
+    position: absolute;
+    background-color: transparent;
+    bottom: 100px;
+    left: 10px;
+    margin-top: 5px;
+    margin-left: 30px;
+  }
+
+
+  /*CSS DOS BOTÕES DE AGENDAMENTO*/
+  .column button {
+    display: none;
+    position: absolute;
+    font-size: 18px;
+    color: black;
+    background-color: #fff4e8;
+    border: 2px solid #f1dac3;
+    margin-bottom: -101px;
+    margin-top: -45px;
+    margin-left: 100px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    cursor: pointer;
+    font-weight: 320;
+    transition: 0.3s;
+    transition: border-color 0.5s, background-color 0.3s, color 0.5s;
+  }
+
+  .column .bro {
+    margin-left: 90px;
+    margin-top: -30px;
+  }
+
+  .column .a {
+    margin-top: -15px;
+  }
+
+  .column .pa {
+    margin-top: -5px;
+  }
+
+  .column .ma {
+    margin-top: 340px;
+    right: 130px;
+  }
+
+  .column button:hover {
+    transform: scale(1.1);
+    color: black;
+    background-color: #f3d9c1;
+    border: 1px solid #e6c8ad;
+  }
+
+  .final img {
+    cursor: pointer;
+    transition: transform .2s;
+    border: 5px solid #b99f88;
+    border-radius: 14px;
+    margin-left: 251px;
+    margin-top: -240px;
+    width: 59%;
+    height: 400px;
+  }
+
+}

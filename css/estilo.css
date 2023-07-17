@@ -1,0 +1,493 @@
+/*CSS UNIVERSAL PARA TODA A PÁGINA*/
+* {
+  background-color: #f5e1ce;
+  margin: auto;
+  padding: 0;
+  font-weight: bold;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+/*CSS DO GRID*/
+header {
+  grid-area: header;
+}
+
+nav {
+  display: block;
+  grid-area: nav;
+}
+
+main {
+  grid-area: main;
+}
+
+footer {
+  grid-area: footer;
+}
+
+/*CSS DO BANNER*/
+
+.slideshow-container {
+  height: 355px;
+  align-items: center;
+  max-width: 1000px;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  margin-top: -60px;
+  margin-left: -70px;
+  display: none;
+}
+
+
+/*CSS DO MENU HORIZONTAL*/
+nav {
+  background-color: #f5e1ce;
+  font-family: "Poppins", sans-serif;
+  width: 100%;
+  height: 70px;
+  margin-left: 50px;
+  background-color: transparent;
+  line-height: 50px;
+}
+
+.logoimg {
+  width: 50px;
+  height: 123px;
+  display: flex;
+  float: left;
+  padding: 5px 25px;
+  margin-top: -6px;
+  margin-left: -160px;
+}
+
+#navbar {
+  margin-left: 110px;
+  margin-right: 10px;
+}
+
+.arrow {
+  background: transparent;
+  width: 0.5em;
+  height: 0.5em;
+  display: inline-block;
+  vertical-align: middle;
+  border-left: 0.15em solid currentColor;
+  border-bottom: 0.15em solid currentColor;
+  transform: rotate(-45deg);
+  margin-left: 0.38em;
+  margin-top: -0.25em;
+}
+
+nav ul li ul {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  transition: all 0.5s ease;
+  margin-top: 1rem;
+  left: 0;
+  display: none;
+}
+
+nav ul li:hover>ul,
+nav ul li ul:hover {
+  visibility: visible;
+  opacity: 1;
+  display: block;
+}
+
+nav ul li {
+  display: inline-block;
+  list-style: none;
+  padding: 30px 0px;
+  margin-right: 30px;
+}
+
+.dropdown {
+  background-color: transparent;
+  position: absolute;
+  padding: 2px 1.4rem;
+}
+
+nav ul li:hover .dropdown ul {
+  opacity: 1;
+  transform: translateY(0) scaleY(1);
+  display: block;
+}
+
+nav ul li:hover .dropdown li {
+  border-radius: 10px;
+  display: block;
+  height: 80px;
+  float: left;
+  padding-top: -90px;
+  padding-left: -30px;
+  margin-top: -25px;
+  margin-left: 290px;
+  margin-bottom: -225px;
+}
+
+nav ul li::after .dropdown {
+  display: block;
+  bottom: 25px;
+  transform: translateX(-50%);
+  background: #000000;
+}
+
+nav ul li:hover::after .dropdown {
+  display: inline;
+  transition: .3s;
+  width: 50%;
+}
+
+nav ul li:last-child a:hover::after {
+  border-radius: 5px;
+  color: rgb(255, 255, 255);
+  transition: .3s;
+  margin-left: -50px;
+  width: 28%;
+}
+
+nav ul li a {
+  background: transparent;
+  text-decoration: none;
+  color: #926354;
+  font-size: 1.3rem;
+  padding: 30px;
+  position: relative;
+}
+
+nav ul li a:hover {
+  color: #926354;
+  transition: .3s;
+}
+
+nav ul li a::after {
+  content: '';
+  width: 0%;
+  height: 4px;
+  position: absolute;
+  bottom: 25px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #926354;
+  transform: width 0.3s;
+}
+
+nav ul li a:hover::after {
+  border-radius: 5px;
+  color: #926354;
+  transition: .3s;
+  width: 50%;
+}
+
+nav ul li .dropdown a:hover::after {
+  border-radius: 5px;
+  color: #926354;
+  transition: .3s;
+  width: 70%;
+}
+
+nav ul li:last-child a:hover::after {
+  border-radius: 5px;
+  color: #926354;
+  transition: .3s;
+  margin-left: 50px;
+  width: 30%;
+}
+
+li:last-child {
+  float: right
+}
+
+hr {
+  width: 100%;
+  border-bottom: 3px solid #926354;
+  margin-bottom: 130px;
+  margin-top: 40px;
+}
+
+
+/*CSS DA BARRA LATERAL*/
+.nav {
+  width: 16%;
+  margin-top: -121px;
+  float: left;
+  margin-left: -53px;
+}
+
+.nav ul {
+  margin-top: 50px;
+  float: left;
+  margin-left: -50px;
+  list-style-type: none;
+}
+
+.nav ul li a {
+  text-decoration: none;
+  color: #a7886e;
+}
+
+aside {
+  border-radius: 14px;
+  height: 510px;
+  width: 80%;
+  padding-left: 63px;
+  margin-left: 55px;
+  margin-bottom: 50px;
+  float: left;
+  background-color: #e9cfb9;
+  padding-top: 15px;
+  padding-bottom: 200px;
+  margin-top: -8px;
+}
+
+aside ul li a {
+  font-family: "Poppins", sans-serif;
+  background-color: transparent;
+  font-size: 1.1rem;
+  justify-content: center;
+}
+
+aside ul li a:hover {
+  text-decoration: 3px underline;
+}
+
+span {
+  background-color: #e9cfb9;
+}
+
+/*CSS DA GALERIA DE IMAGENS*/
+
+h1 {
+  color: #926354;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  font-size: 2.5rem;
+  margin-left: 340px;
+  margin-bottom: 55px;
+  margin-top: -50px;
+}
+
+.gallery_images {
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
+  padding-left: 40px;
+  margin-left: 40px;
+}
+
+.gallery_images img {
+  transition: transform .2s;
+  border-radius: 36px;
+  border: 5px solid #fff4e8;
+}
+
+.gallery_images img:hover {
+  transform: scale(1.1);
+}
+
+h2 {
+  position: relative;
+  background: transparent;
+  color: #ffffff;
+  padding-top: 5px;
+  margin-bottom: 100px;
+  margin-top: -120px;
+  padding-bottom: -10px;
+  margin-left: -14px;
+  padding-left: 30px;
+  font-size: 30px;
+  font-weight: 700;
+  font-family: "Marsden Bold", sans-serif;
+}
+
+.docesa {
+  color: #ffffff;
+  padding-top: 5px;
+  margin-bottom: 100px;
+  margin-top: -110px;
+  padding-bottom: -10px;
+  margin-left: 65px;
+  padding-left: 30px;
+  font-size: 30px;
+  font-weight: 700;
+  font-family: "Marsden Bold", sans-serif;
+}
+
+.column a {
+  text-decoration: none;
+  position: absolute;
+  font-size: 18px;
+  display: inline-block;
+  color: black;
+  background-color: #f5e1ce;
+  border: 2px solid #f1d6bc;
+  padding: 07px 15px;
+  margin-bottom: -501px;
+  margin-top: -94px;
+  margin-left: 115px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  cursor: pointer;
+  font-weight: 310;
+  transition: transform .2s, border-color 0.5s, background-color 0.5s, color 0.5s;
+}
+
+.column a:hover {
+  color: black;
+  transform: scale(1.1);
+}
+
+.hr {
+  margin-top: -119px;
+  margin-bottom: 110px;
+}
+
+.final img {
+  margin-top: -80px;
+  margin-bottom: 10px;
+  margin-left: 40px;
+}
+
+
+@media screen and (min-width: 1020px) {
+  body {
+    min-width: 1020px;
+  }
+
+  nav {
+    width: 900px;
+    margin-bottom: 90px;
+  }
+
+  nav ul li a:hover::after {
+    width: 30%;
+  }
+
+  .slideshow-container {
+    height: 590px;
+    width: 2900px;
+  }
+
+  hr {
+    margin-top: 9px;
+  }
+
+  li:last-child {
+    float: right;
+    margin-right: -290px;
+  }
+
+  aside {
+    width: 200px;
+    height: 700px;
+  }
+
+  aside ul li {
+    background-color: transparent;
+  }
+
+  span {
+    font-size: 1.4rem;
+    margin-right: 150px;
+  }
+
+  main {
+    margin-left: 210px;
+    margin-bottom: 410px
+  }
+
+  h1 {
+    margin-left: 300px;
+    margin-right: 190px;
+  }
+
+  .gallery_images {
+    padding-left: 10px;
+    margin-top: 40px;
+    margin-left: 60px;
+  }
+
+  .gallery_images img {
+    width: 240px;
+    height: 330px;
+  }
+
+  h2 {
+    margin-left: -15px;
+    font-size: 1.4rem;
+  }
+
+  .gallery_images img:hover h1 {
+    font-size: 2.5rem;
+  }
+
+  .column a {
+    margin-left: 90px;
+    text-align: center;
+    font-size: 1.3rem;
+    width: 80px;
+    height: 42px;
+  }
+
+  .docesa {
+    font-size: 1.6rem;
+    margin-left: 40px;
+  }
+
+  .final img {
+    margin-left: 30px;
+    width: 1200px;
+    height: 580px;
+  }
+
+}
+
+@media screen and (max-width: 480px) {
+  body {
+    max-width: 480px;
+  }
+
+  nav {
+    width: 800px;
+    margin-bottom: 90px;
+    margin-right: 250px;
+    margin-left: 50px;
+  }
+
+  nav ul li {
+    margin-left: 10px;
+    width: 200px;
+  }
+
+  #navbar {
+    margin-left: 10px;
+  }
+
+  .nav {
+    width: 100%;
+  }
+
+  .logoimg img {
+    width: 300px;
+    height: 123px;
+    display: flex;
+    float: left;
+    padding: 5px 25px;
+    margin-top: -6px;
+    margin-left: -95px;
+  }
+
+  #navbar {
+    width: 100%;
+  }
+}
